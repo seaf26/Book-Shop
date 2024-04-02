@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/adminPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Add Product</title>
+  </head>
+  <body>
+    <!-- start of navbar -->
+    <nav id="navBar">
+      <div class="logo">
+        <h1>Admin Panel</h1>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Product</a></li>
+        <li><a href="#services">Orders</a></li>
+        <li><a href="#contact">users</a></li>
+        <li><a href="">Messages</a></li>
+      </ul>
+      <div class="menu_item">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div id="menu">
+      <a href="">Home</a>
+      <a href="">Product</a>
+      <a href="">Orders</a>
+      <a href="">users</a>
+      <a href="">Messages</a>
+    </div>
+
+    <div class="icon">
+      <i class="fas fa-up-long"></i>
+      <i class="fas fa-user"></i>
+    </div>
+    <!-- end of navbar -->
+    <!-- ! start of shop products -->
+    <section class="addProduct">
+      <div class="container2">
+        <h2>Add Product</h2>
+        
+        
+          <input type="text" class="box" id="ProductName" placeholder="Product Name" required />
+          <input type="text" class="box" id="ProductPrice" placeholder="Product Price" required />
+          <input type="file" class="box" id="file" required />
+          <input type="submit" name="submit" id="submit" value="Add Product" class="btn" />
+          <input type="submit" name="submit" id="update" value="Update Product" class="btn" />
+          
+       
+      </div>
+    </section>
+
+
+
+    <section class="big">
+      <div class="container" id="seaf">
+
+      </div>
+    </section>
+    
+    <script src="js/main.js"></script>
+  </body>
+
+</html>

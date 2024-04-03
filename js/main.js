@@ -6,6 +6,7 @@ let menutest = document.querySelector(".menu_item ");//good
 let Products = [];
 
 
+if(addProduct!=null){
 if (localStorage.getItem("Products")) {
     Products = JSON.parse(localStorage.getItem("Products"));
     loopData();
@@ -43,6 +44,8 @@ function loopData() {
             }
             document.getElementById("seaf").innerHTML = theUsers;
 }
+}
+
 
 let mmenu_iitem = document.querySelector(".menu_item");
 let mennnnu = document.getElementById("menu");

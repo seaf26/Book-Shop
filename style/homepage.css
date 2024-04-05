@@ -590,6 +590,12 @@ align-items: center; */
 /* end of questions */
 /* media query */
 
+@media screen and ( max-width: 2650px) {
+  #special{
+    display: none;
+  }
+  
+}
 @media screen and (max-width: 1510px) {
   .aboutUs{
 
@@ -614,7 +620,11 @@ align-items: center; */
         }
       }
     }
+    #special{
+      display: none;
+    }
 }  
+
 
 @media screen and (max-width: 640px) {
   .aboutUs{

@@ -39,7 +39,7 @@ let screenWidth = window.innerWidth;
 window.addEventListener("resize", () => {
     screenWidth = window.innerWidth;
     if (screenWidth > 800) {
-        sandwich.style.display = "none";
+        sandwich.style.display = "none !important";
         // mennnnu.style.display = "none";
         // navLinks.forEach(link => link.style.display = "flex");
         // icons.forEach(icon => icon.style.display = "block");

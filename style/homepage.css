@@ -592,7 +592,7 @@ align-items: center; */
 
 @media screen and ( max-width: 2650px) {
   #special{
-    display: none;
+    display: none !important;
   }
   
 }

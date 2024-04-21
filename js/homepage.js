@@ -6,7 +6,6 @@ let img = document.querySelector('.welcomeHome .background img');
 let ListImages= ["images/home-bg.jpg",'images/pexels-maxime-francis-2246476.jpg',"images/pexels-irina-iriser-1366957.jpg","images/pexels-rompalli-harish-1698618.jpg","images/pexels-irina-iriser-1707213.jpg","images/pexels-carlos-oliva-3586966.jpg","images/pexels-roberto-nickson-2478248.jpg","images/pexels-piccinng-3075993.jpg","images/pexels-quang-nguyen-vinh-2162459.jpg","images/pexels-aleksandar-pasaric-2341830.jpg"];
 let cruuentIndex=0;
 let Datas=[]
-console.log(navLinks)
 
 if(window.localStorage.getItem("Products") !== null){
     Datas=JSON.parse(window.localStorage.getItem("Products"))
@@ -39,16 +38,12 @@ let screenWidth = window.innerWidth;
 window.addEventListener("resize", () => {
     screenWidth = window.innerWidth;
     if (screenWidth > 800) {
-        sandwich.style.display = "none !important";
-        // mennnnu.style.display = "none";
-        // navLinks.forEach(link => link.style.display = "flex");
-        // icons.forEach(icon => icon.style.display = "block");
-        // social_media.forEach(social => social.style.fontSize = "18px");
+        sandwich.style.display = "none ";
+        navLinks.style.display = "flex ";
     } else {
-        sandwich.style.display = "flex";
-        // navLinks.forEach(link => link.style.display = "none");
-        // icons.forEach(icon => icon.style.display = "none");
-        navLinks.style.display = "none";
+        sandwich.style.display = "flex ";
+        navLinks.style.display = "none ";
+      
     }
 });
 
@@ -58,7 +53,6 @@ window.addEventListener("resize", () => {
 
 
 setInterval(() => {
-    // let randomIndex = Math.floor(Math.random() * ListImages.length);
     img.src = ListImages[cruuentIndex];
     cruuentIndex =(cruuentIndex+1)%ListImages.length;
 
